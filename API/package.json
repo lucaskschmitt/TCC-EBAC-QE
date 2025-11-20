@@ -1,0 +1,35 @@
+{
+  "name": "ebac-shop-api",
+  "version": "1.0.0",
+  "description": "EBAC Shop API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:report": "jest --reporters=jest-html-reporter",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": [],
+  "author": "lucaskschmitt",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^4.3.0",
+    "supertest": "^7.1.4"
+  },
+  "dependencies": {
+    "joi": "^18.0.2"
+  },
+   "jest": {
+    "reporters": [
+      "default",
+      ["jest-html-reporter", {
+      "outputPath": "test-report.html",
+      "pageTitle": "Relatório de Testes de API",
+      "includeConsoleLog": true
+      }]
+    ]
+  }
+}
