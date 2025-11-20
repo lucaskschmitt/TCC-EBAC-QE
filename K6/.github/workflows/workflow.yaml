@@ -1,0 +1,40 @@
+name: k6 Load Test
+
+on:
+  push:
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  k6-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install k6 v1.3.0
+        run: 
+          sudo apt-get remove -y k6
+          wget https://github.com/grafana/k6/releases/download/v1.3.0/k6-linux-amd64-v1.3.0.tar.gz
+          tar -xvzf k6-linux-amd64-v1.3.0.tar.gz
+          sudo mv k6 /usr/local/bin/
+
+      - name: Run k6 test
+        run:
+          k6 run --out html=report/results.html tests.js
+
+      - name: Upload Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: k6-test-results
+          path: report/results.html
