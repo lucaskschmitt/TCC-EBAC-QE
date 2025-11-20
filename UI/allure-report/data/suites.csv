@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","5462","Deve permitir a seleção das características do produto","","Thu Nov 20 10:46:31 BRT 2025","passed","Thu Nov 20 10:46:37 BRT 2025","","US-001 - Adicionar produtos ao carrinho","",""
+"","6555","Login com credenciais válidas","","Thu Nov 20 10:46:44 BRT 2025","passed","Thu Nov 20 10:46:50 BRT 2025","","US-002 - Login na plataforma","",""
+"","2212","Login caso não seja informada a senha","","Thu Nov 20 10:46:50 BRT 2025","passed","Thu Nov 20 10:46:53 BRT 2025","","US-002 - Login na plataforma","",""
+"","2583","Login com senha inválida","","Thu Nov 20 10:46:55 BRT 2025","passed","Thu Nov 20 10:46:58 BRT 2025","","US-002 - Login na plataforma","",""
+"","8353","Deve permitir a compra de produto disponível","","Thu Nov 20 10:46:23 BRT 2025","passed","Thu Nov 20 10:46:31 BRT 2025","","US-001 - Adicionar produtos ao carrinho","",""
+"","5345","Deve impedir compra de produto caso esteja fora de estoque","","Thu Nov 20 10:46:37 BRT 2025","passed","Thu Nov 20 10:46:42 BRT 2025","","US-001 - Adicionar produtos ao carrinho","",""
+"","2598","Login com email inválido","","Thu Nov 20 10:46:53 BRT 2025","passed","Thu Nov 20 10:46:55 BRT 2025","","US-002 - Login na plataforma","",""

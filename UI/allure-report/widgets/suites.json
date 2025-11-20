@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"0ae04b5614b5dcc3965793e9e49138fd","name":"US-002 - Login na plataforma","statistic":{"failed":0,"broken":0,"skipped":0,"passed":4,"unknown":0,"total":4}},{"uid":"84f0a30226484254e1f159f8d12ff6d1","name":"US-001 - Adicionar produtos ao carrinho","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}}]}

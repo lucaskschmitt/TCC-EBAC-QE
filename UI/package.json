@@ -1,0 +1,23 @@
+{
+  "name": "ebac-shop-ui",
+  "version": "1.0.0",
+  "description": "EBAC Shop UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "e2e": "cypress run --env allure=true",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "test:allure": "npm run e2e && npm run report:allure"
+  },
+  "author": "lucaskschmitt",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "cypress": "^15.2.0",
+    "mochawesome": "^7.1.4"
+  }
+}
