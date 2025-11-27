@@ -6,7 +6,7 @@ const contrato = require('../cuponsContrato/cuponsContrato')
 
 describe('US-003 - API de cupons (Contrato)', () => {
     
-    it.only('Deve validar lista de cupons disponíveis', async () => {
+    it('Deve validar lista de cupons disponíveis', async () => {
         const response = await request(baseURL).get('/wp-json/wc/v3/coupons').auth(user, pass);
         await contrato.validateAsync(response.body)
     })
